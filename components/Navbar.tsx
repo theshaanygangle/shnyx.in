@@ -1,9 +1,10 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Moon, Sun, Phone } from "lucide-react";
+import { Moon, Sun, Phone, House, Hammer, FilePenLine } from "lucide-react";
 import { ABOUT_DATA } from "../data";
 import Button from "./Button";
 import { useTheme } from "../App";
+import { Mail } from "lucide-react";
 
 interface NavbarProps {
   onOpenContact: () => void;
@@ -16,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
   return (
     /* Top Sticky Navbar for all devices - Increased height to h-20 and padding */
     <nav className="flex sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border h-20 px-4 md:px-8 items-center justify-between transition-all duration-300">
-      <Link to="/" className="flex items-center gap-3 group shrink-0">
+      <Link to="/" className="flex items-center gap-2 md:gap-3 group shrink-0">
         <div className="">
           <img
             src="/favicon.jpg"
@@ -29,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
         </span>
       </Link>
 
-      <div className="flex items-center gap-2 md:gap-4 shrink-0">
+      <div className="flex items-center md:gap-4 ">
         <Link
           to="/"
           className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
@@ -38,7 +39,13 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               : "text-muted hover:text-text"
           }`}
         >
-          Home
+          {/* Mobile: show icon */}
+          <span className="block md:hidden">
+            <House size={18} />
+          </span>
+
+          {/* Desktop: show text */}
+          <span className="hidden md:block">Home</span>
         </Link>
         <Link
           to="/projects"
@@ -48,7 +55,13 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               : "text-muted hover:text-text"
           }`}
         >
-          Projects
+          {/* Mobile: show icon */}
+          <span className="block md:hidden">
+            <Hammer size={18} />
+          </span>
+
+          {/* Desktop: show text */}
+          <span className="hidden md:block">Projects</span>
         </Link>
         <Link
           to="/blog"
@@ -58,7 +71,13 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
               : "text-muted hover:text-text"
           }`}
         >
-          Blog
+          {/* Mobile: show icon */}
+          <span className="block md:hidden">
+            <FilePenLine size={18} />
+          </span>
+
+          {/* Desktop: show text */}
+          <span className="hidden md:block">Blog</span>
         </Link>
 
         <div className="w-px h-5 bg-border mx-1 md:mx-2"></div>
