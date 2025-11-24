@@ -56,7 +56,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
         <div className="relative w-full h-48 md:h-72 rounded-2xl overflow-hidden group border border-border shadow-sm">
           <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-60 z-10"></div>
           <img
-            src="../resources/profile/cover1.png"
+            src="/cover1.png"
             alt="Cover"
             className="w-full h-full object-cover object-[25%_22.5%]  transform transition-transform duration-700 group-hover:scale-105"
           />
