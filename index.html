@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shaany - Full-Stack Developer</title>
+    <link rel="icon" type="image/png" href="./resources/profile/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "var(--bg)",
+              surface: "var(--surface)",
+              surfaceHighlight: "var(--surface-highlight)",
+              text: "var(--text)",
+              muted: "var(--muted)",
+              accent: "var(--accent)",
+              border: "var(--border)",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Manrope", "sans-serif"],
+            },
+            animation: {
+              "fade-in-up": "fadeInUp 0.42s ease-out forwards",
+              "fade-in": "fadeIn 0.5s ease-out forwards",
+            },
+            keyframes: {
+              fadeInUp: {
+                "0%": { opacity: "0", transform: "translateY(10px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        /* Light Mode Tokens */
+        --bg: #fafafa;
+        --surface: #ffffff;
+        --surface-highlight: #f4f4f5;
+        --text: #18181b;
+        --muted: #71717a;
+        --accent: #2aa3f4; /* Blue-600 for light mode */
+        --border: #e4e4e7;
+      }
+
+      .dark {
+        /* Dark Mode Tokens */
+        --bg: #0c0c0d;
+        --surface: #121214;
+        --surface-highlight: #1c1c1f;
+        --text: #e6e6e6;
+        --muted: #9a9a9a;
+        --accent: #2aa3f4; /* Blue-500 for dark mode */
+        --border: #27272a;
+      }
+
+      /* Hide Scrollbar Globally */
+      html {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        scroll-behavior: smooth; /* Enforce smooth scroll */
+        width: 100%;
+      }
+
+      body {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE 10+ */
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      ::-webkit-scrollbar {
+        display: none; /* Chrome/Safari/Webkit */
+        width: 0;
+        height: 0;
+        background: transparent;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+          "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body
+    class="bg-[#050505] text-text antialiased selection:bg-accent selection:text-white min-h-screen flex justify-center"
+  >
+    <div id="root" class="w-full"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
