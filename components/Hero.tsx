@@ -68,7 +68,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           <div className="relative">
             <div className="w-32 h-32 rounded-full p-1 bg-background border border-border shadow-xl">
               <img
-                src="../resources/profile/profile1.png"
+                src="/profile1.png"
                 alt={ABOUT_DATA.name}
                 className="w-full h-full rounded-full object-cover hover:scale-105 transition-transform duration-300"
               />

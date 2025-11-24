@@ -18,7 +18,7 @@ const About: React.FC = () => {
           <div className="shrink-0">
             <div className="relative group">
               <img
-                src="../resources/profile/frame1.png"
+                src="/frame1.png"
                 alt="Profile"
                 loading="lazy"
                 className="w-24 h-24 md:w-60 md:h-80 rounded-xl object-cover object-top border border-border  transition-all duration-500 shadow-lg group-hover:scale-105"

@@ -19,13 +19,13 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
       <Link to="/" className="flex items-center gap-3 group shrink-0">
         <div className="">
           <img
-            src="../resources/profile/favicon.jpg"
+            src="/favicon.jpg"
             alt="Profile"
             className="w-10 h-10 rounded-md border border-border hover:scale-95 "
           />
         </div>
-        <span className="font-bold text-base tracking-tight text-text  transition-colors">
-          SHAANY
+        <span className="flex font-bold text-base tracking-tight text-text  transition-colors">
+          SHNYX<p className="text-[#2aa3f4]">.in</p>
         </span>
       </Link>
 

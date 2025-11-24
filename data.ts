@@ -71,8 +71,8 @@ export const PROJECTS_DATA: Project[] = [
     description:
       "A real-time chat app built with the MERN stack and WebSockets, featuring secure authentication and smooth live messaging.",
     tags: ["React", "Node.js", "Express", "MongoDB", "WebSocket", "Bcrypt"],
-    thumbnail: "./resources/thumbnails/5.png",
-    images: ["./resources/thumbnails/5.png"],
+    thumbnail: "/5.png",
+    images: ["/5.png"],
     year: "2025",
     category: "Backend",
     featured: true,
@@ -104,8 +104,8 @@ export const PROJECTS_DATA: Project[] = [
     description:
       "A conversational AI assistant using ChatGPT API designed to provide mental wellness support and guided reflections.",
     tags: ["React", "Node.js", "ChatGPT API", "Express"],
-    thumbnail: "./resources/thumbnails/6.png",
-    images: ["./resources/thumbnails/6.png"],
+    thumbnail: "/6.png",
+    images: ["/6.png"],
     year: "2025",
     category: "Full Stack",
     featured: true,
@@ -130,8 +130,8 @@ export const PROJECTS_DATA: Project[] = [
     description:
       "A modern resume building tool powered by AI that generates optimized bullet points and ATS-friendly formatting.",
     tags: ["Next.js", "Node.js", "AI", "Tailwind"],
-    thumbnail: "./resources/thumbnails/7.png",
-    images: ["./resources/thumbnails/7.png"],
+    thumbnail: "/7.png",
+    images: ["/7.png"],
     year: "2025",
     category: "Full Stack",
     featured: true,
@@ -157,7 +157,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: "BASH",
     issuer: "Spoken Tutorial IIT Bombay",
     date: "2025",
-    thumbnail: "./resources/certificates/BASH.png",
+    thumbnail: "/BASH.png",
     url: "https://spoken-tutorial.org/software-training/test/participant/certificate/153320/4031762/",
   },
   {
@@ -165,7 +165,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: "Full-Stack Web Development Bootcamp",
     issuer: "Udemy",
     date: "2025",
-    thumbnail: "./resources/certificates/Udemy Web Dev.jpg",
+    thumbnail: "/c2.jpg",
     url: "https://www.udemy.com/certificate/UC-ef877cbe-04c8-4aa8-b530-8be39a76b110/",
   },
   {
@@ -173,7 +173,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: "GIT",
     issuer: "Spoken Tutorial IIT Bombay",
     date: "2025",
-    thumbnail: "./resources/certificates/GIT.png",
+    thumbnail: "/GIT.png",
     url: "https://spoken-tutorial.org/software-training/test/participant/certificate/139645/4031762/",
   },
 ];
@@ -188,7 +188,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: "9 min read",
     category: "Design",
     tags: ["UI/UX", "Figma", "Design Tools"],
-    thumbnail: "./resources/thumbnails/1.png",
+    thumbnail: "/1.png",
     content: `
 ## Introduction
 The world of UI/UX design has transformed dramatically over the last decade. What used to rely heavily on static tools like Photoshop or Sketch has evolved into dynamic, collaborative, cloud-based platforms. As user expectations rise, designers must master tools that go beyond interface creation—tools for prototyping, user testing, documentation, accessibility, and collaboration.
@@ -243,7 +243,7 @@ Mastering these tools will help designers deliver consistent, quality, and scala
     readTime: "10 min read",
     category: "Productivity",
     tags: ["VS Code", "Web Dev", "Tools"],
-    thumbnail: "./resources/thumbnails/2.png",
+    thumbnail: "/2.png",
     content: `
 ## Introduction
 VS Code is the world's most-used code editor, especially among web developers. Lightweight yet powerful, its true potential is unlocked through its extension ecosystem.  
@@ -307,7 +307,7 @@ Configuring VS Code with the right extensions transforms your workflow. You writ
     readTime: "11 min read",
     category: "AI",
     tags: ["Prompt Engineering", "ChatGPT", "AI"],
-    thumbnail: "./resources/thumbnails/3.png",
+    thumbnail: "/3.png",
     content: `
 ## Introduction
 AI is becoming the default interface for coding, research, writing, planning, and creativity. Yet, results vary wildly depending on the prompt. The solution is **prompt engineering**, a structured way of communicating with AI models.
